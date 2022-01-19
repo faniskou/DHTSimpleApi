@@ -5,8 +5,9 @@ After=multi-user.target
 [Service]
 User=pi
 Type=simple
-ExecStart=/usr/bin/python /home/pi/DHTSimpleApi/dht.py
+ExecStart=/usr/bin/python3 /home/pi/DHTSimpleApi/dht.py
 Restart=always
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
