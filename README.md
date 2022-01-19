@@ -4,7 +4,7 @@ Should work with DHT11 , DHT22 , AM2302
 Have been tested on rasberry pi w , pi 4 with AM2302
 
 ## Use
-you must offcourse installed python3 and pip3  
+you must offcourse have already installed python3 and pip3  
   
 ### first you must install the above python packages  
 pip3 install Adafruit_Python_DHT  
