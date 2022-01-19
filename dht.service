@@ -1,0 +1,12 @@
+[Unit]
+Description=DHT
+After=multi-user.target
+
+[Service]
+User=pi
+Type=simple
+ExecStart=/usr/bin/python /home/pi/dht.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
