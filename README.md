@@ -17,4 +17,13 @@ Choose your sensor Adafruit_DHT.AM2302 , Adafruit_DHT.DHT11 , Adafruit_DHT.DHT22
   
 ### run the app  
 No port is assigned so will propably run on 5000  
-you can run the api by running py dht.p  
+you can run the api by running py dht.py  
+
+### run on rasbian as a service  
+Use the above commands to install
+sudo cp dht.service /lib/systemd/system/
+sudo chmod 644 /lib/systemd/system/dht.service
+sudo systemctl daemon-reload
+sudo systemctl enable dht.service 
+sudo systemctl start dht.service 
+sudo systemctl status dht.service
