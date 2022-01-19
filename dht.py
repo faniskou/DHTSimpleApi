@@ -1,4 +1,4 @@
-# first you must run the above packages
+# first you must install the above python packages 
 # pip3 install Adafruit_Python_DHT
 # pip3 install Flask
 # pip3 install Flask-RESTful
@@ -81,6 +81,7 @@ class Controller(Resource):
 api.add_resource(Controller, "/")
 
 #  No port is assigned so will propably run on 5000
+#  you can run the api by running py dht.py
 if __name__ == "__main__":
     try:
         begin = threadClass()
