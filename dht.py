@@ -1,3 +1,4 @@
+# first you must run the above packages
 # pip3 install Adafruit_Python_DHT
 # pip3 install Flask
 # pip3 install Flask-RESTful
@@ -21,7 +22,9 @@ except Exception as e:
 app = Flask(__name__)
 api = Api(app)
 
+# Choose your GPIOx port
 pin = 3
+# Choose your sensor Adafruit_DHT.AM2302 , Adafruit_DHT.DHT11 , Adafruit_DHT.DHT22
 sensor = Adafruit_DHT.AM2302
 
 humidity_save = 0
@@ -77,7 +80,7 @@ class Controller(Resource):
 
 api.add_resource(Controller, "/")
 
-
+#  No port is assigned so will propably run on 5000
 if __name__ == "__main__":
     try:
         begin = threadClass()
