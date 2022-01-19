@@ -3,10 +3,11 @@ Description=DHT
 After=multi-user.target
 
 [Service]
+WorkingDirectory=/home/pi/
 User=pi
 Type=simple
 ExecStart=/usr/bin/python /home/pi/DHTSimpleApi/dht.py
-Restart=on-abort
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
