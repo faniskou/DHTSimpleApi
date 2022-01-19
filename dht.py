@@ -81,7 +81,7 @@ class Controller(Resource):
 api.add_resource(Controller, "/")
 
 #  No port is assigned so will propably run on 5000
-#  you can run the api by running py dht.py
+#  you can run the api by running python3 dht.py
 if __name__ == "__main__":
     try:
         begin = threadClass()
